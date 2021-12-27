@@ -1,0 +1,9 @@
+JC_Sunrise	KEYWORD1
+calculate	KEYWORD2
+isLeap	KEYWORD2
+isLeap	LITERAL1
+officialZenith	LITERAL1
+civilZenith	LITERAL1
+nauticalZenith	LITERAL1
+astronomicalZenith	LITERAL1
+pi	LITERAL1
