@@ -10,7 +10,7 @@
 // calculate sunrise and sunset as single integers, i.e. hhmm,
 // given epoch time and utcOffset in minutes.
 void JC_Sunrise::calculate(time_t t, int utcOffset,
-                           int &sunriseOut, int &sunsetOut)
+                           int& sunriseOut, int& sunsetOut)
 {
     uint8_t hour, minute;
     int ord = ordinalDate(t);
@@ -24,7 +24,7 @@ void JC_Sunrise::calculate(time_t t, int utcOffset,
 // calculate sunrise and sunset as time_t values,
 // given epoch time and utcOffset in minutes.
 void JC_Sunrise::calculate(time_t t, int utcOffset,
-                           time_t &sunriseOut, time_t &sunsetOut)
+                           time_t& sunriseOut, time_t& sunsetOut)
 {
     uint8_t hour, minute;
     tmElements_t tm;
@@ -85,7 +85,7 @@ void JC_Sunrise::calculate(time_t t, int utcOffset,
 //       latitude is positive for North and negative for south
 
 void JC_Sunrise::calcSunset(int doy, bool sunset, float utcOffset,
-                            uint8_t &hourOut, uint8_t &minutesOut)
+                            uint8_t& hourOut, uint8_t& minutesOut)
 {
     hourOut = minutesOut = 0;
 

@@ -17,10 +17,10 @@ class JC_Sunrise
         : m_lat{lat}, m_lon{lon}, m_zenith{zenith} {}
 
         void calculate(time_t t, int utcOffset,
-                       int &sunriseOut, int &sunsetOut);
+                       int& sunriseOut, int& sunsetOut);
 
         void calculate(time_t t, int utcOffset,
-                       time_t &sunriseOut, time_t &sunsetOut);
+                       time_t& sunriseOut, time_t& sunsetOut);
 
         static constexpr float
             officialZenith {90.83333},
@@ -34,7 +34,7 @@ class JC_Sunrise
         float m_lon;
         float m_zenith;
         void calcSunset(int doy, bool sunset, float utcOffset,
-             uint8_t &hourOut, uint8_t &minutesOut);
+             uint8_t& hourOut, uint8_t& minutesOut);
         int ordinalDate(time_t t);
         bool isLeap(time_t t);
         float AdjustTo360(float i);
