@@ -12,9 +12,7 @@
 #include <TimeLib.h>        // https://github.com/PaulStoffregen/Time
 #include <Timezone.h>       // https://github.com/JChristensen/Timezone
 
-constexpr int
-    startYear {2015},
-    endYear   {2030};
+constexpr int startYear {2015}, endYear {2030};
 
 // latitude & longitude for sunrise & sunset calculations
 constexpr float myLat {45.8171}, myLon {-84.7278};

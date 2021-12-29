@@ -49,7 +49,7 @@ JC_Sunrise sun {myLat, myLon, JC_Sunrise::officialZenith};
 
 ## Library Functions
 
-### void calculate(time_t t, int utcOffset, int &sunriseOut, int &sunsetOut);
+### void calculate(time_t t, int utcOffset, int& sunriseOut, int& sunsetOut);
 ##### Description
 Calculates sunrise and sunset times as single integers of the form HHMM, for the day given by the local epoch time `t`.
 ##### Syntax
@@ -81,7 +81,7 @@ Serial.print(' ');
 Serial.println(sunset);     // 1705
 ```
 
-### void calculate(time_t t, int utcOffset, time_t &sunriseOut, time_t &sunsetOut);
+### void calculate(time_t t, int utcOffset, time_t& sunriseOut, time_t& sunsetOut);
 ##### Description
 As above, except the sunrise and sunset times are returned as `time_t` values.
 ##### Syntax
